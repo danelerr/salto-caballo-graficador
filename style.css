@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    background-color: #c3a1cd;
+    font-family: 'Monserrat', sans-serif;
+}
+
+p {
+    font-size: 30px;
+}
+
+input {
+    font-family: 'Monserrat', sans-serif;
+    background-color: papayawhip;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.butons {
+    font-size: 20px;
+}
+
+select {
+    font-size: 25px;
+    background-color: papayawhip;
+    border-radius: 10px;
+}
+
+option {
+    background-color: rgb(255, 223, 227);
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+#dibujo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.informacion {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 9px 9px;
+    width: auto;
+    background-color: white;
+    padding-bottom: 20px;  
+    border-radius: 20px;
+}
+
+#carga-algoritmo {  
+    display: none;
+}
+
+.numi {
+    width: 70px;
+    margin-bottom: 10px;
+}
+div.tablero div{
+    display: block;
+    float: left;
+}
+
+#tab {
+    width: 800px;
+    height: 800px;  
+}
+
+/* div.tablero {
+    width: 800px;
+    height: 800px;
+} */
+
+div.tablero div div {
+    width: 50px;
+    height: 50px;
+}
+
+div.tablero div:nth-child(odd) div:nth-child(odd) {
+    background-color: white;
+}
+div.tablero div:nth-child(odd) div:nth-child(even) {
+    background-color: dimgray;
+}
+
+div.tablero div:nth-child(even) div:nth-child(even) {
+    background-color: white;
+}
+div.tablero div:nth-child(even) div:nth-child(odd) {
+    background-color: dimgray;
+}
+
+canvas {
+    box-shadow: 0px 5px 9px 9px;
+}
+
+

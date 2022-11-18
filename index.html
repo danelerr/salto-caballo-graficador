@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Saltos del Caballo </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./canvas.js"></script>
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <section id="datos" class="informacion">
+        <p>Introduzca las dimensiones del tablero</p>
+        <div>
+            <input type="number" class="numi" id="m" required>
+            <input type="number" class="numi" id="n" required>
+        </div>
+        <input type="submit" id='btn-crear' class='butons' value="Enviar">
+    </section>
+
+
+    <section id="carga-algoritmo" class="informacion">
+        <p>Introduzca el algoritmo que vamos a pintar</p>
+        <select name="nombredelsecelt" id="sel">
+            <option value="1"> Sin Heuristica </option>
+            <option value="2"> Heuristica: menor opcion </option>
+            <option value="3"> Heuristica: matriz de precios </option>
+        </select>
+        <p>Introduzca la posicion iniciar (i, j) del caballo </p>
+        <div>
+            <input type="number" class="numi" id="posi" required>
+            <input type="number" class="numi" id="posj" required>
+        </div>
+        <input type="submit" id='btn-ejecutar' class='butons' value="Ejecutar">
+    </section>
+    
+    
+    
+<!--     
+    <button id="btn"> NO SIRVE EL MALDITO ONCLICK </button> -->
+    
+    
+
+    <section id="dibujo">
+    </section>
+    
+</body>
+</html>

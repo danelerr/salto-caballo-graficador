@@ -13,6 +13,9 @@ import {crearCanva} from './canvas.js';
 let tablero;
 let matriz;
 
+//tiempo en milisegundos
+const TIEMPO = 100;
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 
@@ -28,7 +31,7 @@ async function saltoDelCaballo(m, i, j, paso) {
          return true;
     }
     let L1 = reglasAplicablesCaballo(m, i, j);
-    await sleep(500);
+    await sleep(TIEMPO);
     while (L1.length != 0) {
         let R = L1.shift(); //elegir primero
         tablero.deshacer();
@@ -54,7 +57,7 @@ async function saltoCaballoH1(m, i, j, paso) {
         return true;
     }
     let L1 = reglasAplicablesCaballo(m, i, j);
-    await sleep(20);
+    await sleep(TIEMPO);
     while (L1.length != 0) {
         let R = elegirHeuristica1(m, L1);
         tablero.deshacer();
@@ -79,7 +82,7 @@ async function saltoCaballoH2(m, i, j, paso, x) {
          return true;
     }
     let L1 = reglasAplicablesCaballo(m, i, j);
-    await sleep(80);
+    await sleep(TIEMPO);
     while (L1.length != 0) {
         let R = elegirHeuristica2(x, L1); 
         tablero.deshacer();
